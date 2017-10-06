@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Latihan01</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <script>
+    var n=9;
+        var fibo={a:1,b:0,c:0,d:0,e:0,f:0,g:0,h:0,i:0};
+        for (var i = 0; i < n; i++) {
+            for (var j = 0; j < n; j++) {
+                if(j==(n-1)/2){
+                    fibo.c=fibo.a+fibo.b;
+                    fibo.a=fibo.b;
+                    fibo.b=fibo.c;
+                    
+                document.write(fibo.c+"&ensp;");
+                    if(i==((n-1)/2)+1){
+                        fibo.e=fibo.b;
+                        fibo.d=fibo.a;
+                        
+                    }
+                    if(i<=((n-1)/2)){
+                        fibo.h=fibo.b+fibo.a;
+                        fibo.g=fibo.b;
+                    }
+                 }
+
+
+                else if(i==j && j>(n-1)/2){
+                    fibo.f=fibo.e-fibo.d;
+                    fibo.e=fibo.d;
+                    fibo.d=fibo.f;
+                    
+                document.write(fibo.f+"&ensp;");
+                 }
+
+                else if(i+j==n-1 && i>((n-1)/2)){
+                    fibo.i=fibo.h-fibo.g;
+                    fibo.h=fibo.g;
+                    fibo.g=fibo.i;
+                    document.write(fibo.i+"&ensp;");
+                }
+
+                else
+                document.write("&emsp;");
+
+
+            }
+            document.write("</br>");
+        }
+    </script>
+    </body>
+</html>

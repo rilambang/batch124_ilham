@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <script>
+        var n=9;
+        var evenOdd={ganjil:1, genap:16};
+        for (var i = 0; i < n; i++) {
+            for (var j = 0; j < n; j++) {
+                if(i+j==n-1){
+                document.write(evenOdd.genap+"&ensp;");
+                evenOdd.genap--, evenOdd.genap--;
+            } else if(i==j){
+                
+                document.write(evenOdd.ganjil+"&ensp;");
+                evenOdd.ganjil++,evenOdd.ganjil++;
+            }
+
+            else
+                document.write("&emsp;");
+            }
+            document.write("<br/>");
+        }
+    </script>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <script>
+        var n=9;
+        var evenOdd={ganjil:1, genap:16, ganjil1:1, genap1:16}
+        for (var i = 0; i < n; i++) {
+            for (var j = 0; j < n; j++) {
+                if(i==j){
+                document.write(evenOdd.ganjil+"&ensp;");
+                evenOdd.ganjil++, evenOdd.ganjil++;
+            } else if(i+j==n-1) {
+                document.write(evenOdd.genap+"&ensp;");
+                evenOdd.genap--, evenOdd.genap--;
+            } else if(i==(n-1)/2){
+                document.write(evenOdd.genap1+"&ensp;");
+                evenOdd.genap1--, evenOdd.genap1--;
+            } else if(j==(n-1)/2){
+                document.write(evenOdd.ganjil1+"&ensp;");
+                evenOdd.ganjil1++, evenOdd.ganjil1++;
+            }
+
+            else
+                document.write("&emsp;");
+            }
+            document.write("<br/>");
+        }
+    </script>
+    </body>
+</html>
