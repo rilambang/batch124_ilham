@@ -1,0 +1,34 @@
+<!DOCTYPE html>/*identifier html 5(fitur lebih banyak page resoponsif)*/
+<html lang="en">/*atribut*/
+    <head>/*identifier*/
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <script>
+        var n=9;
+        //Looping perubahan baris
+        //Inisialisasinya dengan i=0
+        //kondisinya dimana i<n dan n adalah 9
+        //Looping menggunakan iterasi pertambahan 1
+        for (var i = 0; i < n; i++) {
+            for (var j = 0; j < n; j++) {
+                //Dimana jumlah baris dan kolom
+                //sama dengan nilai n-1
+                //akan mencetak dari kanan atas ke kiri bawah
+                if(i+j==n-1){
+                    //Posisi mencetak bintang sesuai dengan kondisi di atas
+                    //dan ensp adalah single spasi
+                    // emsp adalah double spasi
+                document.write("*");
+            } else
+                document.write("&emsp;");
+            }
+            //bagian perubahan baris
+            document.write("<br/>");
+        }
+    </script>
+    </body>
+</html>
